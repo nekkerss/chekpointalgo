@@ -1,0 +1,29 @@
+ALGORITHM algorithm_name
+VAR
+    voy: INTEGER :=0 ;
+    long : INTEGER :=0 ;
+    mot : INTEGER :=0;
+    m :STRING ;
+    c : CHAR ;
+BEGIN
+    write(m)
+    WHILE (c<>".") DO
+        long = long + 1
+        IF (c =" " or c=".") THEN
+            mot = mot + 1
+        END_IF
+        IF (c="a" or c="u" or c="y" or c="i" or c="o" or c="u" ) THEN
+            voy = voy +1
+        END_IF
+        c+= 1 
+    END_WHILE
+        write (long)
+        write (voy)
+        write (mot)
+END
+
+
+
+
+
+
