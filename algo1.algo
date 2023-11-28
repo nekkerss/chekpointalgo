@@ -9,14 +9,14 @@ BEGIN
     write(m)
     WHILE (c<>".") DO
         long = long + 1
-        IF (c =" " or c=".") THEN
+        IF (c =" ") THEN
             mot = mot + 1
         END_IF
-        IF (c="a" or c="u" or c="y" or c="i" or c="o" or c="u" ) THEN
+        IF (c="a" or c="u" or c="i" or c="o" or c="e" )  or (c="A" or c="U" or c="I" or c="O" or c="E" )THEN
             voy = voy +1
         END_IF
-        c+= 1 
     END_WHILE
+        mot+=1
         write (long)
         write (voy)
         write (mot)
